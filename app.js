@@ -18,7 +18,7 @@ let m = "Welcome to DEDSEC"
 io.on('connection', function (socket) {
   socket.on('iamdedsec', function(message){
     console.log(message);
-    socket.emit('soccer', m);
+    socket.emit('dedsec', m);
   });
 });
 
